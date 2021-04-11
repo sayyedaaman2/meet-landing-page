@@ -1,0 +1,7 @@
+@use './abstract';
+@use './layout';
+body {
+    background-color: abstract.$bg-color;
+    color: abstract.$main-tx-color;
+    font-family: abstract.$font-family;
+}

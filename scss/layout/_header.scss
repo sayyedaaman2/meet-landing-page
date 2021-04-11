@@ -1,0 +1,76 @@
+@use '../abstract';
+.nav {
+    padding-top: 48px;
+
+    .nav__logo {
+        display: block;
+        margin: auto;
+    }
+
+    .hero__img__image {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.hero {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "image1 image2"
+        "content content";
+
+    .hero__img1 {
+        grid-area: image1;
+    }
+    .hero__img2 {
+        grid-area: image2;
+    }
+    .hero__img__image {
+        display: block;
+        width: 100%;
+    }
+    .hero__content {
+        margin-top: 45px;
+        grid-area: content;
+    }  
+    .hero__content__title {
+        font-size: abstract.calculateRem(40);
+        text-transform: capitalize;
+        line-height: 44px;
+        text-align: center;
+        color: abstract.$heading-tx-color;
+        font-weight: 900;
+        padding: 10px 50px 18px;
+    }  
+    .hero__content__summary {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 26px;
+        padding: 0px 20px;
+    }
+    .hero__content__btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 38px;
+    }
+    .hero__content__btns--btn {
+        @include abstract.mainBtn;
+    }
+    .btn__span {
+        color: abstract.$btn-lime-color;
+    }
+    .secondary--btn {
+        background-color: abstract.$btn-purple-bg;
+    }
+
+    @include abstract.mQ(680px) {
+        margin-top: 65px;
+    }
+}

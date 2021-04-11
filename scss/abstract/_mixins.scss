@@ -1,0 +1,46 @@
+//media queries
+@use "./variables";
+@use "./functions";
+
+@mixin mQ($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
+
+//main button
+@mixin mainBtn {
+    font-size: functions.calculateRem(16);
+    font-weight: 900;
+    line-height: 26px;
+    color: variables.$white_tx;
+    background-color: variables.$btn-blue-bg;
+    border: 2px solid transparent;
+    padding: 14px 36px;
+    border-radius: 29px;
+    display: block;
+}
+
+@mixin mainSpan {
+    width: 56px;
+    height: 56px;
+    border: 1px solid variables.$main-tx-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: functions.calculateRem(16);
+    font-weight: 900;
+    margin: auto;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 1px;
+        height: 84px;
+        background-color: variables.$main-tx-color;
+        position: absolute;
+        top: -85px;
+        left: 50%;
+    }
+}

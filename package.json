@@ -1,0 +1,19 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Meet landing page coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "npm run parcel && npm run sass",
+    "sass": "sass styles/style.scss:styles/style.css",
+    "parcel": "parcel build index.html"    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.8"
+  }
+}

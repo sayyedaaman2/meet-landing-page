@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss\\style.scss","scss\\abstract\\_variables.scss"],"names":[],"mappings":"AACA;EACI,kBCFO;EDGP","file":"style.251b6741.css","sourceRoot":"..","sourcesContent":["@use './abstract';\r\nbody {\r\n    background-color: abstract.$bg-color;\r\n    color: red;\r\n}","$bg-color: #233d3f;"]}
