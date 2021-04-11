@@ -36,4 +36,8 @@
         @include abstract.mainBtn;
         margin: 32px auto;
     }
+
+    @include abstract.mQ(680px) {
+        background: url("../assets/tablet/image-footer.jpg");
+    }
 }
