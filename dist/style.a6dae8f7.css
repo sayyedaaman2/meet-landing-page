@@ -17,6 +17,11 @@
   margin: auto;
   width: 100%;
 }
+@media screen and (min-width: 1080px) {
+  .nav {
+    padding-top: 80px;
+  }
+}
 
 .hero {
   margin-top: 55px;
@@ -88,11 +93,26 @@
   .hero .hero__content__btns {
     flex-direction: row;
   }
+  .hero .hero__content__title {
+    padding: 24px 50px 18px;
+    margin-bottom: 15px;
+  }
 }
 @media screen and (min-width: 1080px) {
   .hero {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "image1 content image2";
+  }
+  .hero .hero__content__title {
+    font-size: 4rem;
+    line-height: 64px;
+    padding: 0px 0px 18px;
+  }
+  .hero .hero__img1 {
+    margin-left: -33px;
+  }
+  .hero .hero__img2 {
+    margin-right: -33px;
   }
 }
 
@@ -152,7 +172,7 @@
 .main .main__description__subtitle {
   line-height: 36px;
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 900;
   text-align: center;
   color: #28283d;
   margin-top: 28px;
@@ -168,24 +188,47 @@
   background: white;
 }
 @media screen and (min-width: 680px) {
+  .main {
+    padding: 24px 39px;
+  }
   .main .main__container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .main .span__one {
+    margin-top: 138px;
   }
   .main .main__description {
     max-width: 573px;
     margin: 50px auto 0;
   }
+  .main .main__description__subtitle {
+    line-height: 44px;
+    font-size: 2.5rem;
+    padding: 0px 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main {
+    padding: 55px 165px;
+  }
+  .main .main__description {
+    margin: 65px auto 0;
+  }
 }
 
 .footer {
-  background-color: #4D96AD;
   width: 100%;
   background: url("/image-footer.b654a21e.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -52px;
   position: relative;
   z-index: 0;
+}
+.footer .footer__container {
+  margin-top: -52px;
+  background-color: #4D96AD;
+  opacity: 0.9;
+  height: 100%;
   padding-bottom: 50px;
 }
 .footer .footer__title {
@@ -215,10 +258,26 @@
   border-radius: 29px;
   display: block;
   margin: 32px auto;
+  background-color: #855FB1;
+}
+.footer .btn__span {
+  color: #d9b8ff;
 }
 @media screen and (min-width: 680px) {
   .footer {
     background: url("/image-footer.6704c723.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    background: url("/image-footer.7b36653d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .footer .footer__container {
+    margin-top: -80px;
   }
 }
 
@@ -226,6 +285,10 @@ body {
   background-color: #ffffff;
   color: #87879D;
   font-family: "Red Hat Display", sans-serif;
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

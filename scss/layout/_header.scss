@@ -13,6 +13,10 @@
         margin: auto;
         width: 100%;
     }
+
+    @include abstract.mQ(1080px) {
+        padding-top: 80px;
+    }
 }
 
 .hero {
@@ -88,12 +92,30 @@
         .hero__content__btns {
             flex-direction: row;
         }
+
+        .hero__content__title {
+            padding: 24px 50px 18px;
+            margin-bottom: 15px;
+        }
     }
 
     @include abstract.mQ(1080px) {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas:
-        "image1 content image2";     
+            "image1 content image2";
+
+        .hero__content__title {
+            font-size: abstract.calculateRem(64);
+            line-height: 64px;
+            padding: 0px 0px 18px;
+        }
+
+        .hero__img1 {           
+            margin-left: -33px;
+        }
+        .hero__img2 {            
+            margin-right: -33px;
+        }
 
     }
 }

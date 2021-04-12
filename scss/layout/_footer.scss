@@ -1,18 +1,21 @@
 @use '../abstract';
 
 .footer {
-  
-	
-    background-color: #4D96AD;   
     width: 100%;
-   // background-color: #4D96AD;
-   background: url('../assets/mobile/image-footer.jpg');
-   background-repeat: no-repeat;
+    background: url('../assets/mobile/image-footer.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -52px;
-	position: relative;
-	z-index: 0;
-    padding-bottom: 50px;
+    position: relative;
+    z-index: 0;
+
+
+    .footer__container {
+        margin-top: -52px;
+        background-color: #4D96AD;
+        opacity: 0.9;
+        height: 100%;
+        padding-bottom: 50px;
+    }
 
     .footer__title {
         font-size: 2rem;
@@ -35,9 +38,24 @@
     .hero__content__btns--btn {
         @include abstract.mainBtn;
         margin: 32px auto;
+        background-color: abstract.$btn-purple-bg;
+    }
+    .btn__span {
+        color: #d9b8ff;
     }
 
     @include abstract.mQ(680px) {
         background: url("../assets/tablet/image-footer.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @include abstract.mQ(1280px) {
+        background: url("../assets/desktop/image-footer.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .footer__container {
+            margin-top: -80px;           
+        }
     }
 }

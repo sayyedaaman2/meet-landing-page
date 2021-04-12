@@ -9,55 +9,38 @@
     <title>Frontend Mentor | Meet landing page</title>
   <script src="/style.a6dae8f7.js"></script></head>
   <body>
-    <header>
-      <nav class="nav">
-        <a href="/" aria-label="welcome to meet">
-          <img class="nav__logo" src="/logo.b37d81ec.svg" alt="meet international">
-        </a>
-      </nav>
-      <div class="hero">
-        <div class="hero__img hero__img1">
-          <!--
-          <picture>
-            <source
-              media="(max-width:819px)"
-              srcset="./assets/tablet/image-hero.png"
-            />
-            <source
-              media="(min-width: 820px)"
-              srcset="./assets/desktop/image-hero-left.png"
-            />
-            <img
-              class="hero__img__image"
-              src="./assets/desktop/image-hero-left.png"
-              alt="meet with us"
-            />
-          </picture>
-        -->
-          <img class="hero__img__image" src="/image-hero-left.84ac6edc.png" alt="">
-        </div>
-        <div class="hero__img hero__img2">
-          <img class="hero__img__image" src="/image-hero-right.86e0eda1.png" alt="">
-        </div>
-        <div class="hero__content">
-          <h1 class="hero__content__title">group chat for everyone</h1>
-          <p class="hero__content__summary">
-            Meet makes it easy to connect with others face-to-face virtually and
-            collaborate across any device.
-          </p>
-          <div class="hero__content__btns">
-            <button class="hero__content__btns--btn">
-              Download <span class="btn__span">v1.3</span>
-            </button>
-            <button class="hero__content__btns--btn secondary--btn">
-              What is it?
-            </button>
+    <div class="wrapper">
+      <header>
+        <nav class="nav">
+          <a href="/" aria-label="welcome to meet">
+            <img class="nav__logo" src="/logo.b37d81ec.svg" alt="meet international">
+          </a>
+        </nav>
+        <div class="hero">
+          <div class="hero__img hero__img1">
+            <img class="hero__img__image" src="/image-hero-left.84ac6edc.png" alt="group chat for everyone">
+          </div>
+          <div class="hero__img hero__img2">
+            <img class="hero__img__image" src="/image-hero-right.86e0eda1.png" alt="">
+          </div>
+          <div class="hero__content">
+            <h1 class="hero__content__title">group chat for everyone</h1>
+            <p class="hero__content__summary">
+              Meet makes it easy to connect with others face-to-face virtually
+              and collaborate across any device.
+            </p>
+            <div class="hero__content__btns">
+              <button class="hero__content__btns--btn">
+                Download <span class="btn__span">v1.3</span>
+              </button>
+              <button class="hero__content__btns--btn secondary--btn">
+                What is it?
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main class="main">
-      
+      </header>
+      <main class="main">
         <!--first span-->
         <div class="main__span span__one">
           <span>01</span>
@@ -65,16 +48,16 @@
         <!--conference and chat images-->
         <div class="main__container">
           <div class="main__container__img">
-            <img class="main__container__img__image" src="/image-woman-in-videocall.c4d6a481.jpg" alt="">
+            <img class="main__container__img__image" src="/image-woman-in-videocall.c4d6a481.jpg" alt="a woman video calling">
           </div>
           <div class="main__container__img">
-            <img class="main__container__img__image" src="/image-women-videochatting.53ac3a34.jpg" alt="">
+            <img class="main__container__img__image" src="/image-women-videochatting.53ac3a34.jpg" alt="a group of women video chatting">
           </div>
           <div class="main__container__img">
-            <img class="main__container__img__image" src="/image-men-in-meeting.9834f219.jpg" alt="">
+            <img class="main__container__img__image" src="/image-men-in-meeting.9834f219.jpg" alt="a group of men in a meeting">
           </div>
           <div class="main__container__img">
-            <img class="main__container__img__image" src="/image-man-texting.538a6108.jpg" alt="">
+            <img class="main__container__img__image" src="/image-man-texting.538a6108.jpg" alt="a man texting">
           </div>
         </div>
         <!--brief description of meet-->
@@ -93,15 +76,19 @@
         <div class="main__span span__two">
           <span>02</span>
         </div>
-      
-    </main>
-    <footer class="footer">
-      <h4 class="footer__title">Experience more together</h4>
-      <p class="footer__summary">
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </p>
-      <button class="hero__content__btns--btn"> Download <span class="btn__span">v1.3</span></button>
-    </footer>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <h4 class="footer__title">Experience more together</h4>
+          <p class="footer__summary">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <button class="hero__content__btns--btn">
+            Download <span class="btn__span">v1.3</span>
+          </button>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

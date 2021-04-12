@@ -44,7 +44,7 @@
     .main__description__subtitle {
         line-height: 36px;
         font-size: abstract.calculateRem(32);
-        font-weight: 800;
+        font-weight: 900;
         text-align: center;
         color: abstract.$heading-tx-color;
         margin-top: 28px;
@@ -63,13 +63,33 @@
     }
 
     @include abstract.mQ(680px) {
+        padding: 24px 39px;
+
         .main__container {
             grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .span__one {
+            margin-top: 138px;
         }
 
         .main__description {
             max-width: 573px;
             margin: 50px auto 0;
+        }
+
+        .main__description__subtitle {
+            line-height: 44px;
+            font-size: abstract.calculateRem(40);
+            padding: 0px 60px;
+        }
+    }
+
+    @include abstract.mQ(1280px) {
+        padding: 55px 165px;
+
+        .main__description {
+            margin: 65px auto 0;
         }
     }
 }
