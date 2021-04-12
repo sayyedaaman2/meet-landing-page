@@ -1,4 +1,5 @@
 @use '../abstract';
+@use 'sass:color';
 
 .footer {
     width: 100%;
@@ -39,7 +40,13 @@
         @include abstract.mainBtn;
         margin: 32px auto;
         background-color: abstract.$btn-purple-bg;
+
+        &:hover,
+        &:focus {
+            background-color: color.scale(abstract.$btn-purple-bg, $lightness: 20%);
+        }
     }
+
     .btn__span {
         color: #d9b8ff;
     }
@@ -54,8 +61,25 @@
         background: url("../assets/desktop/image-footer.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+
+
         .footer__container {
-            margin-top: -80px;           
+            margin-top: -80px;
+            padding: 90px 165px;            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;           
+            align-items: center;
+        }
+
+        .footer__title {            
+            padding-top: 0;  
+            text-align: left;
+        }
+
+        .footer__summary {           
+            margin-top: 0px;
+            padding: 0 20px;
+            text-align: left;
         }
     }
 }

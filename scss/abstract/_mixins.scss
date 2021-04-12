@@ -1,6 +1,7 @@
 //media queries
 @use "./variables";
 @use "./functions";
+@use 'sass:color';
 
 @mixin mQ($arg) {
     @media screen and (min-width: $arg) {
@@ -19,6 +20,12 @@
     padding: 14px 36px;
     border-radius: 29px;
     display: block;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: color.scale(variables.$btn-blue-bg, $lightness: 20%);
+    }
 }
 
 @mixin mainSpan {

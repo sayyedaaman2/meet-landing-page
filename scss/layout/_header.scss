@@ -1,4 +1,5 @@
 @use '../abstract';
+@use 'sass:color';
 
 .nav {
     padding-top: 48px;
@@ -84,6 +85,11 @@
 
     .secondary--btn {
         background-color: abstract.$btn-purple-bg;
+
+        &:hover,
+        &:focus {
+            background-color: color.scale(abstract.$btn-purple-bg, $lightness: 20%);
+        }
     }
 
     @include abstract.mQ(680px) {
@@ -110,10 +116,11 @@
             padding: 0px 0px 18px;
         }
 
-        .hero__img1 {           
+        .hero__img1 {
             margin-left: -33px;
         }
-        .hero__img2 {            
+
+        .hero__img2 {
             margin-right: -33px;
         }
 
