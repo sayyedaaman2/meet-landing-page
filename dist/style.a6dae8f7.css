@@ -316,6 +316,8 @@ body {
 
 .wrapper {
   overflow-x: hidden;
+  max-width: 1480px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

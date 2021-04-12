@@ -292,17 +292,19 @@
   }
   .footer .footer__container {
     margin-top: -80px;
-    padding: 50px 165px;
+    padding: 90px 165px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
   }
   .footer .footer__title {
     padding-top: 0;
+    text-align: left;
   }
   .footer .footer__summary {
     margin-top: 0px;
-    padding: 0;
+    padding: 0 20px;
+    text-align: left;
   }
 }
 
@@ -314,6 +316,8 @@ body {
 
 .wrapper {
   overflow-x: hidden;
+  max-width: 1480px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

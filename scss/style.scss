@@ -5,6 +5,10 @@ body {
     color: abstract.$main-tx-color;
     font-family: abstract.$font-family;
 }
+
+//max width of container
 .wrapper {
     overflow-x: hidden;
+    max-width: 1480px;
+    margin: 0 auto;
 }
