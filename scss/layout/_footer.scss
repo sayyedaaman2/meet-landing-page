@@ -38,8 +38,9 @@
 
     .hero__content__btns--btn {
         @include abstract.mainBtn;
-        margin: 32px auto;
+        margin: 2rem 1.5rem;
         background-color: abstract.$btn-purple-bg;
+        max-width: 20rem;
 
         &:hover,
         &:focus {

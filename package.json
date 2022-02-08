@@ -7,7 +7,7 @@
     "start": "parcel index.html",
     "build": "npm run parcel && npm run sass",
     "sass": "sass scss/style.scss:styles/style.css",
-    "parcel": "parcel build index.html"    
+    "parcel": "parcel build index.html"
   },
   "keywords": [],
   "author": "",

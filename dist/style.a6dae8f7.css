@@ -70,6 +70,7 @@
   margin-top: 38px;
 }
 .hero .hero__content__btns--btn {
+  min-width: 12rem;
   font-size: 1rem;
   font-weight: 900;
   line-height: 26px;
@@ -78,6 +79,8 @@
   border: 2px solid transparent;
   padding: 14px 36px;
   border-radius: 29px;
+  text-decoration: none;
+  text-align: center;
   display: block;
 }
 .hero .hero__content__btns--btn:hover, .hero .hero__content__btns--btn:focus {
@@ -255,6 +258,7 @@
   padding: 0 24px;
 }
 .footer .hero__content__btns--btn {
+  min-width: 12rem;
   font-size: 1rem;
   font-weight: 900;
   line-height: 26px;
@@ -263,9 +267,12 @@
   border: 2px solid transparent;
   padding: 14px 36px;
   border-radius: 29px;
+  text-decoration: none;
+  text-align: center;
   display: block;
-  margin: 32px auto;
+  margin: 2rem 1.5rem;
   background-color: #855FB1;
+  max-width: 20rem;
 }
 .footer .hero__content__btns--btn:hover, .footer .hero__content__btns--btn:focus {
   cursor: pointer;
