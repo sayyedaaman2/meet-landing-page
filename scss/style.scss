@@ -1,8 +1,8 @@
 @use './abstract';
 @use './layout';
 body {
-    background-color: abstract.$bg-color;
-    color: abstract.$main-tx-color;
+    background-color: abstract.$clr-white;
+    color: abstract.$clr-grey-purple;
     font-family: abstract.$font-family;
 }
 

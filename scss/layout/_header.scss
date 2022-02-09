@@ -54,7 +54,7 @@
         text-transform: capitalize;
         line-height: 44px;
         text-align: center;
-        color: abstract.$heading-tx-color;
+        color: abstract.$clr-dark-grey;
         font-weight: 900;
         padding: 10px 50px 18px;
     }
@@ -80,15 +80,15 @@
     }
 
     .btn__span {
-        color: abstract.$btn-lime-color;
+        color: abstract.$clr-light-green;
     }
 
     .secondary--btn {
-        background-color: abstract.$btn-purple-bg;
+        background-color: abstract.$clr-med-purple;
 
         &:hover,
         &:focus {
-            background-color: color.scale(abstract.$btn-purple-bg, $lightness: 20%);
+            background-color: color.scale(abstract.$clr-med-purple, $lightness: 20%);
         }
     }
 

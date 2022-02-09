@@ -10,13 +10,12 @@
 }
 
 //main button
-@mixin mainBtn {
-    min-width: 12rem;
+@mixin mainBtn {   
     font-size: functions.calculateRem(16);
     font-weight: 900;
     line-height: 26px;
-    color: variables.$white_tx;
-    background-color: variables.$btn-blue-bg;
+    color: variables.$clr-white;
+    background-color: variables.$clr-turquoise;
     border: 2px solid transparent;
     padding: 14px 36px;
     border-radius: 29px;
@@ -27,14 +26,14 @@
     &:hover,
     &:focus {
         cursor: pointer;
-        background-color: color.scale(variables.$btn-blue-bg, $lightness: 20%);
+        background-color: color.scale(variables.$clr-turquoise, $lightness: 20%);
     }
 }
 
 @mixin mainSpan {
     width: 56px;
     height: 56px;
-    border: 1px solid variables.$main-tx-color;
+    border: 1px solid variables.$clr-grey-purple;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +47,7 @@
         content: "";
         width: 1px;
         height: 84px;
-        background-color: variables.$main-tx-color;
+        background-color: variables.$clr-grey-purple;
         position: absolute;
         top: -85px;
         left: 50%;

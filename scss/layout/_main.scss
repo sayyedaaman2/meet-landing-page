@@ -38,7 +38,7 @@
         letter-spacing: 4px;
         font-size: abstract.calculateRem(16);
         font-weight: 900;
-        color: abstract.$heading-tx-blue;
+        color: abstract.$clr-turquoise;
     }
 
     .main__description__subtitle {
@@ -46,7 +46,7 @@
         font-size: abstract.calculateRem(32);
         font-weight: 900;
         text-align: center;
-        color: abstract.$heading-tx-color;
+        color: abstract.$clr-dark-grey;
         margin-top: 28px;
     }
 
