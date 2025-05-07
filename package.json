@@ -1,0 +1,23 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev" : "parcel index.html",
+    "build" : "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayyedaaman2/meet-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayyedaaman2/meet-landing-page/issues"
+  },
+  "homepage": "https://github.com/sayyedaaman2/meet-landing-page#readme",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}
